@@ -1,74 +1,22 @@
-<p align="center">
-<img src="https://github.com/fivemland/fl_nametag/blob/main/assets/logo.png " width="100" height="100">
-</p>
+![thumbnail](https://github.com/user-attachments/assets/2eac5746-1d60-4a93-b3f8-b8c5ed3cf4a9)
 
-<h1 align="center">
-FiveM Land Nametag
-</h1>
+# Preview: https://www.youtube.com/watch?v=fZ2240F8Pl8
 
-[![https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot.png](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot.png')](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot.png')
-[![https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot2.png](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot2.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot2.png')](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot2.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot2.png')
-[![https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot3.png](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot3.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot3.png')](https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot3.png 'https://github.com/fivemland/fl_nametag/blob/main/screenshots/Screenshot3.png')
+## Toggle Nametags: 
+### Players can toggle their & other nametags on or off, allowing for flexible roleplay situations.
 
-## Commands
+• /togglemyname - Toggles your own player nametag.
 
-- /togmyname - own name display on / off
-- /changename - Change player In-Game nick
-- /names - toggle names visibility
+• /toggleallnames - Toggles all other player nametags.
 
-## Dependencies
+• /toggleid - Removes Id's from player nametags.
 
-- [ESX Legacy](https://github.com/esx-framework/esx-legacy 'ESX Legacy')
-- [oxmysql](https://github.com/overextended/oxmysql 'oxmysql')
+• /mask - Masks a players nametag with a anonymous name to hide identity.
 
-### Optional
+## Dynamic Health Indicators: Nametags turn red when players take damage, providing immediate visual feedback during intense moments.
 
-- [fl_adminpanel](https://github.com/fivemland/fl_adminpanel 'fl_adminpanel') - Support admin functions (logo, name)
+## Masking & Identity Concealment: The script automatically masks player identities when wearing a mask, hiding their real name and displaying a masked alias instead. Nametags revert to the character's true name when the mask is removed.
 
-## Exports
+### *This script is dependent on es_extented, illenium appearance, and oxmysql*
 
-### Client
-
-#### setMyNameVisible
-
-- state: boolean
-- Sets my name visible state
-
-```lua
-exports.fl_nametag:setMyNameVisible(state)
-```
-
-#### getMyNameVisible
-
-- return boolean
-
-```lua
-local myName = exports.fl_nametag:getMyNameVisible()
-```
-
-#### setNamesVisible
-
-- set nametag visible
-
-```lua
-exports.fl_nametag:setNamesVisible(state)
-```
-
-#### isNamesVisible
-
-- return: boolean
-
-```lua
-local namesVisible = exports.fl_nametag:isNamesVisible()
-```
-
-### Server
-
-##### getPlayerFirstJoin
-
-- player: serverId
-- return: unix timestamp
-
-```lua
-local firstJoin = exports.fl_nametag:getPlayerFirstJoin(player)
-```
+### ESX Framework only.
